@@ -1,0 +1,54 @@
+body {
+  background-color: #0020dd;
+}
+
+.darkborder {
+  border: 3px solid #000;
+
+}
+
+.altborder {
+  border: 4px solid #81a0ff;
+
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #001100;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 5px;
+  text-align: center;
+  width: 64px;
+  color: cornflowerblue;
+}
+
+
+.floatright {
+  float:right;
+}
+
+.floatleft {
+  float:left;
+}
+
+.floatnone {
+  clear:both;
+
+}
+
+red {
+  background-color: crimson !important;
+}
+
+button {
+  cursor: pointer;
+  font-size: 30px;
+}
+.spacer {
+  height:50px;
+}

@@ -1,0 +1,143 @@
+<div *ngIf="!gameBoardRaw">
+	Suduko Server Data not Available
+</div>
+
+
+<div class="container">
+
+	<div class="row justify-content-center">
+
+		<div class="col-1"></div>
+
+		<div class="col-">
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 0:3" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 9:12" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 18:21" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 3:6" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 12:15" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 21:24" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 6:9" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 15:18" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 24:27" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+			<div class="floatnone"></div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 27:30" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 36:39" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 45:48" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 30:33" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 39:42" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 48:51" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 33:36" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 42:45" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 51:54" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+
+			<div class="floatnone"></div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 54:57" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 63:66" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 72:75" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 57:60" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 66:69" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 75:78" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+			<div class="darkborder floatleft">
+
+
+				<div *ngFor="let item of answers | slice: 60:63" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 69:72" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+				<div *ngFor="let item of answers | slice: 78:81" class="floatleft square">{{item}}</div>
+				<div class="floatnone"></div>
+
+			</div>
+
+
+		</div>
+		<div class="col-1"></div>
+
+	</div>
+
+	<div class="row">
+		<div  class="col-* spacer"></div>
+	</div>
+
+	<div class="row justify-content-center">
+
+	    <div class="col-*"> <button (click)="getChangeAnswer()" class="btn-info">Reload</button>
+	    </div>
+
+
+	  </div>
+</div>
