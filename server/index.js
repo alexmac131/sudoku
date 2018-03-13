@@ -32,4 +32,8 @@ app.get('/',function (request,response) {
 
 });
 
+app.get('*', function(request,response){
+	response.redirect('/suduko');
+});
+
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
