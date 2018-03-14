@@ -14,6 +14,7 @@ export class AppComponent implements OnInit, AfterViewChecked {
   public answers: any;
   public puzzle: any;
   public remember: number;
+
   constructor(private http: HttpClient) {
   }
 
@@ -38,6 +39,11 @@ export class AppComponent implements OnInit, AfterViewChecked {
 
 
   rememberance() {
+
+    const clearme = document.querySelector('.red');
+    if (clearme !== null) {
+      clearme.classList.remove('red');
+    }
     if (typeof this.remember !== 'undefined') {
       const test = document.getElementById(this.remember.toString());
       if (test !== null) {
