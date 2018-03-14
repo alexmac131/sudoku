@@ -15,6 +15,8 @@ export class AppComponent implements OnInit{
   public puzzle: any;
   public position: number = 1;
 
+  public remember: number;
+
   public count: number = 1;
 
   constructor(private http: HttpClient) {
@@ -41,5 +43,23 @@ export class AppComponent implements OnInit{
 
   getChangeAnswer() {
     this.getGameData();
+    this.pickSquare(this.remember);
+  }
+
+  pickSquare(value) {
+
+    console.log ('value %s remember %s', value, this.remember);
+    this.remember = value;
+
+
+    let clearme = document.querySelector('.red');
+    if (clearme !== null) {
+      clearme.classList.remove('red');
+    }
+
+    let test = document.getElementById(value);
+    test.classList.add('red');
+    clearme = document.querySelector('.red');
+    console.log ('clear me %s\n\n', clearme);
   }
 }

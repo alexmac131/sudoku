@@ -11,62 +11,102 @@
 
 		<div class="col-">
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 0:3; index as i" class="float-left square">{{item}} | {{count}}</div>
+
+				<div *ngFor="let item of answers | slice: 0:3; index as i"
+					class="float-left square" (click)="pickSquare(0 +i)"
+					id="{{0 + i}}">{{item}}</div>
+
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 9:12" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 9:12; index as i"
+					class="float-left square"
+					(click)="pickSquare(9 +i)" id="{{9 + i}}"
+				>{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 18:21" class="float-left square">{{item}}</div>
+
+				<div *ngFor="let item of answers | slice: 18:21;index as i"
+					class="float-left square"
+					id="{{18 + i}}" (click)="pickSquare(18+i)">{{item}}</div>
 				<div class="float-none"></div>
 			</div>
 
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 3:6" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 3:6; index as i"
+					(click)="pickSquare(3 +i)" id="{{3 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 12:15" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 12:15; index as i"
+					(click)="pickSquare(12 +i)" id="{{12 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 21:24" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 21:24; index as i"
+					(click)="pickSquare(21 +i)" id="{{21 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none "></div>
 
 			</div>
 
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 6:9" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 6:9; index as i"
+					(click)="pickSquare(6 +i)" id="{{6 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 15:18" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 15:18; index as i"
+					(click)="pickSquare(15 +i)" id="{{15 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 24:27" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 24:27; index as i"
+					(click)="pickSquare(24 +i)" id="{{24 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
 			</div>
 
 			<div class="float-none"></div>
 
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 27:30" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 27:30; index as i"
+					(click)="pickSquare(27 +i)" id="{{27 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 36:39" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 36:39; index as i"
+					(click)="pickSquare(36 +i)" id="{{36 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 45:48" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 45:48; index as i"
+					(click)="pickSquare(45 +i)" id="{{45 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
 			</div>
 
 			<div class="darkborder float-left">
 
 
-				<div *ngFor="let item of answers | slice: 30:33" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 30:33; index as i"
+					(click)="pickSquare(30 +i)" id="{{30 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 39:42" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 39:42; index as i"
+					(click)="pickSquare(39 +i)" id="{{39 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 48:51" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 48:51; index as i"
+					(click)="pickSquare(48 +i)" id="{{48 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
 
 			</div>
 
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 33:36" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 33:36; index as i"
+					(click)="pickSquare(33 +i)" id="{{33 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 42:45" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 42:45; index as i"
+					(click)="pickSquare(42 +i)" id="{{42 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 51:54" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 51:54; index as i"
+					(click)="pickSquare(51 +i)" id="{{51 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
 
 			</div>
@@ -75,29 +115,47 @@
 			<div class="float-none"></div>
 
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 54:57" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 54:57; index as i"
+					(click)="pickSquare(54 +i)" id="{{54 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 63:66" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 63:66; index as i"
+					(click)="pickSquare(63 +i)" id="{{63 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 72:75" class="float-left square">{{item}}</div>
-				<div class="float-none"></div>
-			</div>
-
-			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 57:60" class="float-left square">{{item}}</div>
-				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 66:69" class="float-left square">{{item}}</div>
-				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 75:78" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 72:75; index as i"
+					(click)="pickSquare(72 +i)" id="{{72 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
 			</div>
 
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 60:63; index as i" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 57:60; index as i"
+					(click)="pickSquare(57 +i)" id="{{57 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 69:72" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 66:69; index as i"
+					(click)="pickSquare(66 +i)" id="{{66 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
-				<div *ngFor="let item of answers | slice: 78:81" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 75:78; index as i"
+					(click)="pickSquare(75 +i)" id="{{75 + i}}"
+					class="float-left square">{{item}}</div>
+				<div class="float-none"></div>
+			</div>
+
+			<div class="darkborder float-left">
+				<div *ngFor="let item of answers | slice: 60:63; index as i"
+					(click)="pickSquare(60 +i)" id="{{60 + i}}"
+					class="float-left square">{{item}}</div>
+				<div class="float-none"></div>
+				<div *ngFor="let item of answers | slice: 69:72; index as i"
+					(click)="pickSquare(69 +i)" id="{{69 + i}}"
+					class="float-left square">{{item}}</div>
+				<div class="float-none"></div>
+				<div *ngFor="let item of answers | slice: 78:81; index as i"
+					(click)="pickSquare(78 +i)" id="{{78 + i}}"
+					class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
 			</div>
 

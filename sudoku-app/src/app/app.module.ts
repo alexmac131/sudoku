@@ -4,13 +4,11 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { AppComponent
  } from './app.component';
-import { PositionComponent } from './position/position.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PositionComponent
   ],
   imports: [
     BrowserModule, HttpClientModule

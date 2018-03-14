@@ -28,3 +28,7 @@ button {
 .spacer {
   height:50px;
 }
+
+.red {
+  background-color: coral;
+}
