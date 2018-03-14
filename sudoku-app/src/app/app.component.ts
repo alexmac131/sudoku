@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,8 +13,9 @@ export class AppComponent implements OnInit{
 
   public answers: any;
   public puzzle: any;
+  public position: number = 1;
 
-  public count: number;
+  public count: number = 1;
 
   constructor(private http: HttpClient) {
   }

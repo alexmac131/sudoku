@@ -11,7 +11,7 @@
 
 		<div class="col-">
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 0:3" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 0:3; index as i" class="float-left square">{{item}} | {{count}}</div>
 				<div class="float-none"></div>
 				<div *ngFor="let item of answers | slice: 9:12" class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
@@ -93,7 +93,7 @@
 			</div>
 
 			<div class="darkborder float-left">
-				<div *ngFor="let item of answers | slice: 60:63" class="float-left square">{{item}}</div>
+				<div *ngFor="let item of answers | slice: 60:63; index as i" class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
 				<div *ngFor="let item of answers | slice: 69:72" class="float-left square">{{item}}</div>
 				<div class="float-none"></div>
