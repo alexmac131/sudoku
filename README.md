@@ -4,7 +4,7 @@ March 13, 2018
 ## Install 
 * Clone repository
 * cd to repository
-* run **`sh install.sh`**
+* run **	`sh install.sh`**
 
 This should install all node_module dependencies for both the server backend and the Sukudo board app.
 
