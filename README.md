@@ -16,5 +16,5 @@ cd to base of repository
 
 run  **`sh start.sh`**
 
-The script should start both the node server on port 3000 and the appplication which listens on port 4200. It will open your default browser of choice for you.
+The script should start both the node server on port 3000 and the appplication which listens on port 4200. It will open your default browser of choice for you.  The server and **ininital** build should take 5 seconds and then all is good.
 
