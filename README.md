@@ -6,7 +6,7 @@ March 13, 2018
 * cd to repository
 * run **	`sh install.sh`**
 
-This should install all node_module dependencies for both the server backend and the Sukudo board app.
+This should install all node_module dependencies for both the server backend and the Sukudo board app.  Total install time is between 1 minute and 5 seconds to one minute and fifty.
 
 
 ## To Run
